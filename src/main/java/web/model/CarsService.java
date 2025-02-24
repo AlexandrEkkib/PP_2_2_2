@@ -1,11 +1,6 @@
 package web.model;
 
-import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
 import java.util.List;
-
-
 
 public interface CarsService {
       List<Cars> carsList = List.of(
