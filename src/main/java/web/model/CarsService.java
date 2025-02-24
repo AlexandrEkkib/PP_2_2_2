@@ -1,13 +1,13 @@
 package web.model;
 
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class CarsService {
-    public static List<Cars> carsCount(List<Cars> carsList, Integer number) {
 
-    return (number == null || number <= 0 || number >= 5)
-            ? carsList
-            : carsList.stream().limit(number).collect(Collectors.toList());
-    }
+
+public interface CarsService {
+    List<Cars> carsList = new ArrayList<>();
+   List<Cars> carsCount(Integer number);
 }
